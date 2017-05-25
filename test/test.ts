@@ -18,4 +18,11 @@ tap.test('should convert an object to a string', async () => {
   expect(myString).to.equal(yamlString)
 })
 
+// test some behaviours
+tap.test('should allow dots in key', async () => {
+  let testString = `myKey.with.dots: some`
+  let testObject = await smartyaml.yamlStringToObject(testString)
+  expect(testObject['myKey.with.dots']).to.equal('some')
+})
+
 tap.start()
