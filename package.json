@@ -1,6 +1,6 @@
 {
   "name": "smartyaml",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "handle yaml in smart ways",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
