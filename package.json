@@ -1,6 +1,6 @@
 {
   "name": "@pushrocks/smartyaml",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "private": false,
   "description": "handle yaml in smart ways",
   "main": "dist/index.js",
