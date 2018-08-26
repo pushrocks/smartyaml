@@ -1,6 +1,4 @@
-import 'typings-global'
-import * as jsYaml from 'js-yaml'
+import 'typings-global';
+import * as jsYaml from 'js-yaml';
 
-export {
-  jsYaml
-}
+export { jsYaml };

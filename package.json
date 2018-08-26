@@ -1,11 +1,13 @@
 {
-  "name": "smartyaml",
+  "name": "@pushrocks/smartyaml",
   "version": "1.0.2",
+  "private": false,
   "description": "handle yaml in smart ways",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "(npmts)"
+    "test": "(tstest test/)",
+    "build": "(tsbuild)"
   },
   "repository": {
     "type": "git",
@@ -22,11 +24,14 @@
   },
   "homepage": "https://gitlab.com/pushrocks/smartyaml#README",
   "dependencies": {
-    "@types/js-yaml": "^3.5.30",
-    "js-yaml": "^3.8.4",
-    "typings-global": "^1.0.16"
+    "@types/js-yaml": "^3.11.2",
+    "js-yaml": "^3.8.4"
   },
   "devDependencies": {
-    "tapbundle": "^1.0.12"
+    "@gitzone/tsbuild": "^2.0.22",
+    "@gitzone/tsrun": "^1.1.12",
+    "@gitzone/tstest": "^1.0.15",
+    "@pushrocks/tapbundle": "^3.0.5",
+    "@types/node": "^10.9.2"
   }
 }
