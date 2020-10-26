@@ -2,5 +2,16 @@
   "npmci": {
     "globalNpmTools": [],
     "npmAccessLevel": "public"
+  },
+  "gitzone": {
+    "projectType": "npm",
+    "module": {
+      "githost": "gitlab.com",
+      "gitscope": "pushrocks",
+      "gitrepo": "smartyaml",
+      "shortDescription": "handle yaml in smart ways",
+      "npmPackagename": "@pushrocks/smartyaml",
+      "license": "MIT"
+    }
   }
 }

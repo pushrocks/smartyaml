@@ -3,11 +3,11 @@
   "version": "2.0.3",
   "private": false,
   "description": "handle yaml in smart ways",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist_ts/index.js",
+  "typings": "dist_ts/index.d.ts",
   "scripts": {
-    "test": "(tstest test/)",
-    "build": "(tsbuild)"
+    "test": "(tstest test/ --web)",
+    "build": "(tsbuild --web)"
   },
   "repository": {
     "type": "git",
@@ -24,14 +24,29 @@
   },
   "homepage": "https://gitlab.com/pushrocks/smartyaml#README",
   "dependencies": {
-    "@types/js-yaml": "^3.11.2",
-    "js-yaml": "^3.8.4"
+    "@types/js-yaml": "^3.12.5",
+    "js-yaml": "^3.14.0"
   },
   "devDependencies": {
-    "@gitzone/tsbuild": "^2.0.22",
-    "@gitzone/tsrun": "^1.1.12",
-    "@gitzone/tstest": "^1.0.15",
-    "@pushrocks/tapbundle": "^3.0.5",
-    "@types/node": "^10.9.2"
-  }
+    "@gitzone/tsbuild": "^2.1.25",
+    "@gitzone/tsrun": "^1.2.12",
+    "@gitzone/tstest": "^1.0.52",
+    "@pushrocks/tapbundle": "^3.2.9",
+    "@types/node": "^14.14.3"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "files": [
+    "ts/**/*",
+    "ts_web/**/*",
+    "dist/**/*",
+    "dist_*/**/*",
+    "dist_ts/**/*",
+    "dist_ts_web/**/*",
+    "assets/**/*",
+    "cli.js",
+    "npmextra.json",
+    "readme.md"
+  ]
 }
